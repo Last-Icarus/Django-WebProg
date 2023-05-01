@@ -1,0 +1,28 @@
+<div class="blog_feed">
+    {% for room in rooms %}
+        <div class="blog_post">
+            {% if request.user == room.host %}
+            <a href="{% url 'update-room' room.id %}">Редактировать</a>
+            <a href="{% url 'delete-room' room.id %}">Удалить</a>
+            {% endif %}
+
+            <h5><a href="{% url 'room' room.id %}">{{room.name}}</a></h5>
+            <a class="blog_author" href="{% url 'user-profile' room.host.id %}">@{{room.host.username}}</a>
+            {% if room.image %}
+                <div class="blog_img"><img src="/media/{{room.image}}" /></div>
+            {% endif %}
+
+            <div class="blog_text">{{room.description|slice:":300"}}</div>
+            {% if room.description|length > 300 %}
+            <div>...</div>
+            <div>
+            <a href="{% url 'room' room.id %}" class="">Читать далее</a>
+            </div>
+            {% endif %}
+            <div>
+                <h5>{{room.created}}</h5>
+            </div>
+            <hr>
+        </div>
+    {% endfor %}
+</div>

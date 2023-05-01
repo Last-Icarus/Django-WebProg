@@ -1,0 +1,291 @@
+body {
+    background-color: aliceblue;
+}
+
+.searchbar input {
+    border-radius: 70px;
+    padding: 5px 15px;
+    border: solid 2px black;
+    width: 350px;
+}
+
+.navbar {
+    background-color: #D3D3D3;
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.user_field {
+    padding-left: 280px;
+    margin-right: 20px;
+}
+
+.searchbar {
+    margin: 20px;
+}
+
+.navbar_item {
+    margin: 20px;
+}
+
+.username_label {
+    text-align: end;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.menubar {
+    margin: 0 auto 0 auto;
+    height: 100%;
+}
+
+.menubar a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.menubar a:hover {
+    text-decoration: none;
+    color: #656565;
+}
+
+.carousel.slide,.carousel-inner {
+    border-radius: 15px;
+}
+
+body {
+    background-image: url(/static/images/background.png);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    background-size:cover;
+}
+
+.games_showcase {
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 2px #D3D3D3;
+}
+
+.carousel-item img {
+    width: 400px ;
+    height: 300px ;
+}
+
+.shop {
+    margin: 20px auto 0 auto;
+    max-width: 1000px;
+}
+
+.carousel {
+    width: 600px;
+    margin: 0 auto 0 auto;
+    background-color: rgb(34, 39, 59);
+    color: white;
+}
+
+.game_template {
+  display: flex;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.game_template:first-child {
+    border-radius: 15px 15px 0 0;
+}
+
+.game_template:hover {
+    background-color: rgba(180,180,180, 0.1);
+}
+
+.games_showcase {
+  margin-top: 40px;
+}
+
+.games_showcase img {
+  width: 184px;
+  height: 69px;
+  object-fit: cover;
+}
+
+.game_cost {
+  margin-left: auto;
+}
+
+.slider_game_cost {
+    height: 54px;
+    line-height: 54px;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 24px;
+    width: fit-content;
+    background-color: #21284F;
+    border-radius: 15px 0 15px 0;
+    border: solid 3px #D3D3D3;
+}
+
+.game_desc {
+    margin-left: 10px;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.space {
+    height: 30px;
+}
+
+.room-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.blog_container {
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 3px #D3D3D3;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.blog_container hr {
+    background-color: #656565;
+}
+
+.blog_post img {
+    height: 400px;
+}
+
+.blog_post {
+    font-size: 16px;
+}
+
+.blog_text {
+    margin-top: 6px;
+    margin-bottom: 14px;
+}
+
+.blog_img {
+    margin-top: 10px;
+}
+
+.room-container {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 3px #D3D3D3;
+}
+
+.login_template, .register_template {
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 3px #D3D3D3;
+
+
+    width: 500px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.login {
+    background-color: #D3D3D3;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.login_template form * {
+    margin-top: 10px;
+}
+
+.register_template ul,.register_template span {
+    display: none;
+}
+
+label[for=id_username] {
+    visibility: hidden;
+    font-size: 0px;
+}
+
+label[for=id_username]::after {
+    content: "Имя пользователя";
+    visibility: visible;
+    display: block;
+    font-size: 16px;
+}
+
+label[for=id_password1] {
+    visibility: hidden;
+    font-size: 0px;
+}
+
+label[for=id_password1]::after {
+    content: "Пароль";
+    visibility: visible;
+    display: block;
+    font-size: 16px;
+}
+label[for=id_password2] {
+    visibility: hidden;
+    font-size: 0px;
+}
+
+label[for=id_password2]::after {
+    content: "Подтверждение пароля";
+    visibility: visible;
+    display: block;
+    font-size: 16px;
+    margin-right: auto;
+}
+
+/* .profile-container {
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 3px #D3D3D3;
+
+    padding: 20px;
+    margin: 20px;
+} */
+
+.profile_blogs, .profile_activity {
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 3px #D3D3D3;
+
+    padding: 20px;
+    margin: 20px;
+    height: fit-content;
+}
+
+.create_room {
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 3px #D3D3D3;
+
+
+    width: 500px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}

@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="profile-container">
+        <div>
+        </div>
+
+        <div class="profile_blogs">
+        <h1>{{user.username}}</h1>
+            {% include 'base/feed_component.html' %}
+        </div>
+        <div class="profile_activity">
+            {% include 'base/activity_component.html' %}
+        </div>
+    </div>
+{% endblock %}

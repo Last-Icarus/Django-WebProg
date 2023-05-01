@@ -1,0 +1,10 @@
+{% load date_filter %}
+<h3>Недавняя активность</h3>
+{% for message in room_messages %}
+    <div>
+        <small><a href="{% url 'user-profile' message.user.id %}">@{{message.user}}</a>  {{message.created|timesince|date_filter}} назад</small>
+        <small>прокомментировал в "{{message.room}}"</small>
+
+        <p>{{message}}</p>
+    </div>
+{% endfor %}
