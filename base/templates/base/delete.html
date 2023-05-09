@@ -2,10 +2,12 @@
 {% block content %}
 
 <form method="POST" action="">
-    {% csrf_token %}
-    <p> Вы уверены, что хотите удалить пост?</p>
-    <a href="{{request.META.HTTP_REFERER}}">Назад</a>
-    <input type="submit" value="Confirm">
+    <div class="desc_container" style="height: 120px;width: 400px;font-size: 17px;">
+        {% csrf_token %}
+        <p> Вы уверены, что хотите удалить пост?</p>
+        <a href="{{request.META.HTTP_REFERER}}">Назад</a>
+        <input type="submit" value="Confirm">
+    </div>
 </form>
 
 {% endblock %}

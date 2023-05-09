@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+
+<div class="desc_container">
+    <a>
+        Добро пожаловать в магазин-блог TrigonPlay, самый маленький в мире сайт, посвещённый играм, где каждый волен высказать своё мнение в тематическом посте в раздале "блог"
+    </a>
+    <img src="{% static 'images/about.avif' %}">
+    <a>
+        Также вам могут быть следующие <a class="link_text" href="./links.html">ссылки</a>
+    </a>
+</div>
+
+{% endblock %}

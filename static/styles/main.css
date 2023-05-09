@@ -289,3 +289,41 @@ label[for=id_password2]::after {
     margin-right: auto;
     margin-top: 100px;
 }
+
+
+.desc_container {
+    height: 700px;
+    width: 700px;
+    margin: auto;
+    margin-top: 200px;
+    font-size: 30px;
+    text-align: justify;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 2px #D3D3D3;
+}
+
+.link_container {
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    margin-top: 200px;
+    font-size: 30px;
+    text-align: justify;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 2px #D3D3D3;
+}
+
+.container a {
+    margin-top: auto;
+}
+
+.link_text {
+    text-decoration: underline;
+    color: blue;
+}

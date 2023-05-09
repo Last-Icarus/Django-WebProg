@@ -5,7 +5,7 @@
 
 {% load static %}
 <div class="navbar">
-    <a href="/" class="logo">
+    <a href="/shop/" class="logo">
         <img src="{% static 'images/logo.png' %}">
     </a>
     
@@ -22,11 +22,20 @@
         <a href="/" class="navbar_item">
             БЛОГ
         </a>
-        <!-- <a href="" class="navbar_item">
-            «ПОЛЕЗНЫЕ РЕСУРСЫ»
-        </a> -->
+        <a href="/useful_links" class="navbar_item">
+            ПОЛЕЗНЫЕ РЕСУРСЫ
+        </a>
+        <a href="/about" class="navbar_item">
+            О САЙТЕ
+        </a>
+        <a href="/pool" class="navbar_item">
+            ОБРАТНАЯ СВЯЗЬ
+        </a>
         <a href="{% url 'user-profile' request.user.id %}" class="navbar_item">
             {{request.user.username|upper}}
+        </a>
+        <a href="/video" class="navbar_item">
+            ВИДЕО
         </a>
     </div>
     

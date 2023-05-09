@@ -1,0 +1,46 @@
+body {
+    background-image: url(./background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.desc_container {
+    height: 600px;
+    width: 650px;
+    margin: auto;
+    margin-top: 200px;
+    font-size: 30px;
+    text-align: justify;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 2px #D3D3D3;
+}
+
+.link_container {
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    margin-top: 200px;
+    font-size: 30px;
+    text-align: justify;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 2px #D3D3D3;
+}
+
+.container a {
+    margin-top: auto;
+}
+
+.link_text {
+    text-decoration: underline;
+    color: blue;
+}

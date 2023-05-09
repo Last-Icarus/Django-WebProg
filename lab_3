@@ -1,0 +1,11 @@
+while True:
+    try:
+        katet_1 = int(input('Введите длину первого катета: '))
+        katet_2 = int(input('Введите длину второго катета: '))
+    except ValueError:
+        print('Пожалуйста, введите целое число')
+        continue
+
+    p = 2 * katet_1 + katet_2
+    s = (katet_1 * katet_2) / 2
+    print('Периметр прямоугольного треугольника:', "{:.2f}".format(p) ,'\nПлощадь прямоугольного треугольника:', "{:.2f}".format(s))

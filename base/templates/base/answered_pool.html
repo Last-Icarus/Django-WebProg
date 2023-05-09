@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<div class="desc_container" style="width: 500px; height: 500px;">
+    <h1>Спасибо за отзыв!</h1>
+    <h3>Введённые данные:</h3>
+    <p>Номер формы: {{pool.id}}</p>
+    <p>Дизайн: {{pool.design}}</p>
+    <p>Функционал: {{pool.functionality}}</p>
+    <p>Креативность: {{pool.creativity}}</p>
+    <p>Наполнение: {{pool.content}}</p>
+    <p>Другое: {{pool.other}}</p>
+</div>
+
+{% endblock %}

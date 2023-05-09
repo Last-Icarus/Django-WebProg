@@ -4,7 +4,11 @@
 
 <div class="room-container">
     <div>
+        <a class="link_text" href="/">Вернуться</a>
         <h2>{{room.name}}</h2>
+        {% if room.image %}
+        <div class="blog_img"><img src="/media/{{room.image}}" style="max-height: 400px;" /></div>
+        {% endif %}
         <p>{{room.description}}</p>
 
         <div class="comment-wrapper">

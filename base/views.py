@@ -6,8 +6,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 
-from .models import Room, Message, Carousel, Product
-from .forms import RoomForm
+from .models import Room, Message, Carousel, Product, Pool
+from .forms import RoomForm, PoolForm
 
 
 def loginView(request):
@@ -90,12 +90,12 @@ def room(request, pk):
 def createRoom(request):
     form = RoomForm()
     if request.method == 'POST':
-        form = RoomForm(request.POST)
+        form = RoomForm(request.POST, request.FILES)
         if form.is_valid():
             room = form.save(commit=False)
             room.host = request.user
             room.save()
-            return redirect('home')
+            return redirect('room', pk=room.id)
     context = {'form':form}
     return render(request, 'base/room_form.html',context)
 
@@ -144,6 +144,30 @@ def shop(request):
 def product(request,pk):
     pass
 
+def about(request):
+    return render(request, 'base/WebProgLab2/about.html')
 
+def useful_links(request):
+    return render(request, 'base/WebProgLab2/links.html')
 
+def pool(request):
+    form = PoolForm()
+    if request.method == 'POST':
+        form = PoolForm(request.POST)
+        if form.is_valid():
+            pool = form.save(commit=False)
+            pool.save()
+            return redirect('answered_pool', pk=pool.id)
+    context = {'form':form}
+    return render(request,'base/pool.html', context)
 
+def answered_pool(request,pk):
+    pool = Pool.objects.get(id=pk)
+    print(pool.__dict__)
+    context = { 'pool' : pool }
+
+    return render(request, 'base/answered_pool.html', context)
+
+def video(request):
+
+    return render(request,'base/video.html')
