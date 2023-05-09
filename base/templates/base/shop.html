@@ -1,6 +1,13 @@
 {% extends 'main.html' %}
 
 {% block content %}
+<script>
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 1200
+    })
+  });
+</script>
 <div class="shop">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
